@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/layout_padding">
+
+    <ImageView
+        android:id="@+id/ivTypeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/layout_padding"
+        android:src="@drawable/type_car" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/ivTypeIcon"
+        android:text="ابي اروح الهايبر وما عندي سيارة ممكن حد يوديني"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="50dp"
+        android:textSize="@dimen/small_font_size"
+        fontPath="fonts/DIN-NEXT_-ARABIC-REGULAR.otf"
+        tools:ignore="MissingPrefix"/>
+
+    <LinearLayout
+        android:id="@+id/layoutDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_toLeftOf="@+id/ivTypeIcon"
+        android:gravity="right|center_vertical"
+        android:layout_marginTop="@dimen/layout_padding"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" فزعوا"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/small_font_size2"
+            fontPath="fonts/DIN-NEXT_-ARABIC-REGULAR.otf"
+            tools:ignore="MissingPrefix"/>
+        <TextView
+            android:id="@+id/tvHelpersNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/small_font_size2"
+            fontPath="fonts/DIN-NEXT_-ARABIC-REGULAR.otf"
+            tools:ignore="MissingPrefix"/>
+
+        <ImageView
+            android:id="@+id/ivHelpersNumIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_padding2"
+            android:src="@drawable/my_list_help_accepted_accept" />
+
+        <TextView
+            android:id="@+id/tvHelpType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_padding2"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/small_font_size2"
+            fontPath="fonts/DIN-NEXT_-ARABIC-REGULAR.otf"
+            tools:ignore="MissingPrefix"/>
+
+        <ImageView
+            android:id="@+id/ivHelpTypeIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_padding2"
+            android:src="@drawable/my_list_help_accepted_info_help_type" />
+
+        <TextView
+            android:id="@+id/tvHelperGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_padding2"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/small_font_size2"
+            fontPath="fonts/DIN-NEXT_-ARABIC-REGULAR.otf"
+            tools:ignore="MissingPrefix"/>
+
+        <ImageView
+            android:id="@+id/ivHelperGenderIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_padding2"
+            android:src="@drawable/my_list_help_accepted_info_attendance" />
+
+        <TextView
+            android:id="@+id/tvHelpTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_padding2"
+            android:textSize="@dimen/small_font_size2"
+            android:textColor="@color/gray"
+            fontPath="fonts/DIN-NEXT_-ARABIC-REGULAR.otf"
+            tools:ignore="MissingPrefix"/>
+        <ImageView
+            android:id="@+id/ivHelpTimeIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/my_list_help_accepted_time"
+            android:layout_marginLeft="@dimen/view_padding2"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutDetails"
+        android:layout_marginTop="@dimen/layout_padding"
+        android:layout_toLeftOf="@+id/ivTypeIcon"
+        android:background="@drawable/purple_round_shape"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding"
+        android:text="@string/cancel"
+        android:textColor="@color/purple"
+        fontPath="fonts/DIN-NEXT_-ARABIC-REGULAR.otf"
+        tools:ignore="MissingPrefix"/>
+</RelativeLayout>
